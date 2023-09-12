@@ -1,0 +1,14 @@
+def min_turns(current, target):
+    turns = 0
+    
+    for i in range(4):
+        current_digit = int(current[i])
+        target_digit = int(target[i])
+        
+        
+        forward_turns = abs(target_digit - current_digit)
+        backward_turns = 10 - forward_turns
+        
+        turns += min(forward_turns, backward_turns)
+    
+    return turns
