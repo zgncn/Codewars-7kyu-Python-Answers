@@ -1,0 +1,7 @@
+def get_count(sentence):
+    vowels=set("aeiou")
+    my_set=[]
+    for i in sentence:
+      if i in vowels:
+        my_set.append(i)
+    return len(my_set)
