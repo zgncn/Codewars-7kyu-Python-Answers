@@ -1,0 +1,7 @@
+def disemvowel(string_):
+    vowels=["a","e","i","o","u","A","E","I","U","O"]
+    empty=""
+    for i in string_:
+      if i not in vowels:
+        empty+=i
+    return empty
