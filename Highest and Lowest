@@ -1,0 +1,6 @@
+def high_and_low(numbers):
+    numbers_list=list(map(int,numbers.split()))
+    high=max(numbers_list)
+    low=min(numbers_list)
+    
+    return str(high) +" "+str(low) 
