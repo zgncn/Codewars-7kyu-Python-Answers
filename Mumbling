@@ -1,0 +1,5 @@
+def accum(s):
+    empty=[]
+    for i,c in enumerate(s):
+      empty.append(c.upper()+c.lower()*i)
+    return "-".join(empty)
