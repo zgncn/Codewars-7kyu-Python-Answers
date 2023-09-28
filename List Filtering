@@ -1,0 +1,11 @@
+def filter_list(l):
+    empty=[]
+    for i in l:
+      try:
+        if i==0:
+          empty.append(i)
+        elif i%i==0:
+          empty.append(i)
+      except TypeError:
+        continue
+    return empty
