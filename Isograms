@@ -1,0 +1,9 @@
+def is_isogram(string):
+    x=set()
+    string=string.lower()
+    for i in string:
+      if i not in x:
+        x.add(i)
+      else:
+        return False
+    return True
